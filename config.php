@@ -5,7 +5,7 @@ $url = parse_url(getenv("mysql://be8d2047567ed9:800f7dca@eu-cdbr-west-03.cleardb
 $server = $url[""];
 $username = $url[""];
 $password = $url[""];
-$db = substr($url[""], 1);
+$db = substr($url["index.php"], 1);
 
 $conn = new mysqli($server, $username, $password, $db);
 ?>

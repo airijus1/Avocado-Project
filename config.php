@@ -1,11 +1,16 @@
-
 <?php
-$url = parse_url(getenv("mysql://be8d2047567ed9:800f7dca@eu-cdbr-west-03.cleardb.net/heroku_23b9b3b190ec73b?reconnect=true"));
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'heroku_23b9b3b190ec73b');
+define('DB_USERNAME', 'be8d2047567ed9');
+define('DB_PASSWORD', '800f7dca');
+define('DB_NAME', 'demo');
+ 
+/* Attempt to connect to MySQL database */
+$connect = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+# echo"Connected!!"; 
+// Check connection
+if($connect === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
 
-$server = $url[""];
-$username = $url[""];
-$password = $url[""];
-$db = substr($url["index.php"], 1);
-
-$conn = new mysqli($server, $username, $password, $db);
-?>

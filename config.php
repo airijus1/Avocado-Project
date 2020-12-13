@@ -1,9 +1,9 @@
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_SERVER', 'heroku_23b9b3b190ec73b');
+define('DB_USERNAME', 'be8d2047567ed9');
+define('DB_PASSWORD', '800f7dca');
 define('DB_NAME', 'demo');
  
 /* Attempt to connect to MySQL database */

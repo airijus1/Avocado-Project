@@ -7,7 +7,7 @@ define('DB_PASSWORD', 'L2dB22IZoc');
 define('DB_NAME', 'demo');
  
 /* Attempt to connect to MySQL database */
-$connect = new mysqli('DB_SERVER', 'DB_USERNAME', 'DB_PASSWORD', 'DB_NAME');
+$connect = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 # echo"Connected!!"; 
 // Check connection
 if($connect === false){

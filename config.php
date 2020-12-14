@@ -3,7 +3,7 @@
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'remotemysql.com');
 define('DB_USERNAME', 'tsx9wh5BQr');
-define('DB_PASSWORD', ' L2dB22IZoc');
+define('DB_PASSWORD', 'L2dB22IZoc');
 define('DB_NAME', 'demo');
  
 /* Attempt to connect to MySQL database */

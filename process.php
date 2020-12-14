@@ -2,7 +2,7 @@
 
 session_start();
 
-$mysqli = new mysqli('heroku_23b9b3b190ec73b', 'be8d2047567ed9','800f7dca','demo') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('remotemysql.com', 'tsx9wh5BQr','L2dB22IZoc','demo') or die(mysqli_error($mysqli));
 
 if (isset($_POST['save'])){
 $artist = $_POST['artist'];
@@ -20,3 +20,4 @@ $mysqli->query("INSERT INTO data (artist, song, platform, review) VALUES('$artis
 
 }
 ?>
+
